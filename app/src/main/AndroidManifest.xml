@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shredsweat">
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:name="com.example.shredsweat.WorkoutApp"
+        android:icon="@drawable/logooverview"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logooverview"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.7MinutesWorkout">
+        <activity
+            android:name="com.example.shredsweat.HistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.shredsweat.BMIActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.shredsweat.WorkoutCompletionActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.shredsweat.ExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.shredsweat.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
